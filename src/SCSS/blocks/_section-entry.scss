@@ -1,0 +1,228 @@
+.body {
+    width: 100%;
+    height: 100%;
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-entry {
+    width: 100%;
+    position: relative;
+    padding: 24px 32px;
+    max-width: 1200px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 28px;
+    height: 28px;
+    background: transparent;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all.5s;
+
+    &:hover {
+        background: #F5F4F2;
+        transition: all .5s;
+
+        .close__icon {
+            fill: #383736;
+            transition: all .5s;
+        }
+    }
+
+    &:active {
+        background: #E7E4DE;
+    }
+
+    &__icon {
+        fill: #B2B0AB;
+        width: 14px;
+        height: 14px;
+    }
+}
+
+.card-product {
+    width: 100%;
+    display: flex;
+
+    &__img {
+        display: flex;
+        align-items: baseline;
+        padding-top: 10px;
+        margin: 0 9.3% 0 4.5%;
+        min-width: 86.39px;
+    }
+}
+
+.card-price {
+    width: 100%;
+    padding-left: 31px;
+    margin-left: 10px;
+    border-left: solid 1px #F0EEEB;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-shrink: 2;
+
+    &__subtitle {
+        width: 100%;
+        color: #989691;
+        font-size: 1rem;
+        line-height: 20px;
+
+        &--padding {
+            padding: 12px 0;
+        }
+    }
+
+    &__sum {
+        font-weight: bold;
+        font-size: 1.7rem;
+        line-height: 36px;
+    }
+}
+
+.info {
+    &__subtitle {
+        color: #989691;
+        font-size: 0.85rem;
+        line-height: 16px;
+    }
+
+    &__title {
+        font-family: "Roboto";
+        font-weight: bold;
+        font-size: 1.7rem;
+        line-height: 36px;
+        margin-bottom: 10px;
+    }
+
+    &__description {
+        font-size: 1rem;
+        line-height: 20px;
+    }
+
+    &__block {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__element {
+        margin-bottom: 12px;
+        width: 27.2%;
+        margin-right: 20px;
+        min-width: 100px;
+    }
+}
+
+.chips-block {
+    width: 100%;
+    display: flex;
+    margin-top: 5px;
+
+    &__icon-check {
+        width: 13px;
+        min-width: 13px;
+        height: 10px;
+        margin-right: 10px;
+    }
+
+    &__icon-close {
+        width: 12px;
+        height: 12px;
+        min-width: 12px;
+        margin-right: 10px;
+        fill: #EB4B51;
+    }
+
+    &--green {
+        background: #F2FAF0;
+        color: #64B851;
+    }
+
+    &--red {
+        background: #FAF0F0;
+        color: #EB4B51;
+    }
+
+    &--margin {
+        margin: 0 16px 0 0;
+    }
+}
+
+.chips {
+    font-weight: 800;
+    font-size: 0.85rem;
+    line-height: 16px;
+    padding: 8px 16px;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.highlight {
+    font-weight: 800;
+    color: #383736;
+
+    &--red {
+        color: #EB4B51;
+    }
+
+    &--blue {
+        color: #2794DB;
+    }
+}
+
+.btn {
+    width: 100%;
+    font-weight: 800;
+    padding: 12px 20px;
+    font-size: 1rem;
+    line-height: 20px;
+
+    border-radius: 6px;
+    cursor: pointer;
+    outline: transparent;
+    border: transparent;
+    transition: all.3s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--orange {
+        background: #FAC62D;
+    }
+
+    &:hover {
+        background: #F0B505;
+        transition: all.3s;
+    }
+
+    &:active {
+        background: #E1AB08;
+    }
+
+    span {
+        margin-left: 10px;
+    }
+}
+
+.icon-key {
+    width: 13px;
+    min-width: 13px;
+    height: 13px;
+}
